@@ -1,0 +1,50 @@
+/* Thin */
+@font-face {
+    font-family: 'AritaDotumKR';
+    src: url('./fonts/AritaDotumKR-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Light */
+@font-face {
+    font-family: 'AritaDotumKR';
+    src: url('./fonts/AritaDotumKR-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'AritaDotumKR';
+    src: url('./fonts/AritaDotumKR-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* SemiBold */
+@font-face {
+    font-family: 'AritaDotumKR';
+    src: url('./fonts/AritaDotumKR-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'AritaDotumKR';
+    src: url('./fonts/AritaDotumKR-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+/* root var */
+:root {
+    --font-thin: 100;
+    --font-light: 300;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+}

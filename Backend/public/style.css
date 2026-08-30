@@ -1,0 +1,216 @@
+@import url('./fonts.css');
+/* Fonts */
+
+body {
+    background-color: #fafafa;
+    font-family: 'AritaDotumKR', sans-serif;
+    padding: 20px 18px;
+}
+
+header {
+    color: #0144EE;
+    font-size: 24px;
+    font-weight: var(--font-semibold);
+}
+
+#sub_head {
+    font-size: 46px;
+    font-weight: var(--font-bold);
+
+    padding-left: 5px;
+    margin-top: 24px;
+    margin-bottom: 26px;
+}
+
+#sub_head p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+
+#all_status {
+    height: 250px;
+    background-color: #0144EE;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 28px 22px;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: stretch;
+}
+
+#stat_left {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: start;
+}
+
+#stat_text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #5d8bff;
+}
+
+#stat_label {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#stat_main {
+    margin: 0;
+    font-size: 27px;
+    font-weight: var(--font-bold);
+    line-height: 1.35;
+}
+
+#stat_main span {
+    color: #fff;
+}
+
+#stat_sav {
+    font-size: 18px;
+    font-weight: var(--font-semibold);
+    color: rgba(255, 255, 255, 0.85);
+    align-self: end;
+}
+
+#char_emo {
+    font-size: 100px;
+    line-height: 1;
+    align-self: center;
+    margin-top: 100px;
+}
+
+/*실시간 절약 상태 */
+#block_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.now_stat {
+    height: 200px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin-bottom: 20px;
+}
+
+.stat_title {
+    font-size: 20px;
+    font-weight: var(--font-bold);
+    margin: 10px;
+    margin-left: 15px;
+}
+
+/* 오늘의 절약 일지 */
+#block_3 {}
+
+/* 오늘의 절약 일지 카드 */
+#today_log {
+    height: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;            /* 내부 여백 통합 지정 */
+    display: flex;
+    flex-direction: column;   /* 자식 요소들을 세로로 정렬 */
+}
+
+/* 로그 목록 컨테이너 (gap으로 바 사이 간격 조절) */
+#log_list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;                /* margin 대신 gap을 사용하여 삐져나침 방지 */
+    margin-top: 15px;         /* 제목과의 간격 */
+}
+
+/* 바(Bar) 요소 */
+.sav_log {
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    margin: 0;                /* 바깥 여백 제거 */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+    box-sizing: border-box;   /* 패딩 계산 오류 방지 */
+}
+
+.log_text {
+    flex: 1;
+    font-size: 14px;
+    font-weight: var(--font-medium);
+}
+
+.log_sav {
+    font-size: 13px;
+    font-weight: var(--font-semibold);
+    color: #fff;
+    white-space: nowrap;
+}
+
+.graph {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gauge_svg {
+    width: 90%;
+    max-width: 160px;
+}
+
+.gauge_bg {
+    fill: none;
+    stroke: #E4E9F5;
+    stroke-width: 16;
+    stroke-linecap: round;
+}
+
+.gauge_bg--blue {
+    stroke: #C9DBFF;
+}
+
+.gauge_fg {
+    fill: none;
+    stroke-width: 16;
+    stroke-linecap: round;
+    stroke-dasharray: 251.2;
+    stroke-dashoffset: 251.2;
+    transition: stroke-dashoffset 0.6s ease;
+}
+
+.gauge_fg--blue {
+    stroke: #0144EE;
+}
+
+.gauge_fg--red {
+    stroke: #FF0505;
+}
+
+.gauge_value {
+    margin-top: -8px;
+    font-size: 20px;
+    font-weight: var(--font-bold);
+}
+
+.gauge_value--blue {
+    color: #0144EE;
+}
+
+.gauge_value--red {
+    color: #FF0505;
+}
